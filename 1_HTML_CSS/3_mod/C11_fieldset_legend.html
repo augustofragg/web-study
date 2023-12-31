@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        fieldset {
+            border: 2px solid #FF0000;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            width: max-content;
+            margin-bottom: 5vh;
+        }
+
+        input[type="text"] {
+            border: 1px solid #CCC;
+            font-size: 15px;
+            padding: 3px;
+        }
+
+        legend {
+            background-color: #FF0000;
+            color: #FFFFFF;
+            padding: 5px;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1>fieldset e legend</h1>
+
+    <form action="paginas/login.html" method="get">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+             <label>
+                 Nome:<br/>
+                <input type="text" name="name"/>
+             </label><br/>
+
+            <label>
+                Sobrenome:<br/>
+                <input type="text" name="lastname"
+            </label><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da Empresa:<br/>
+                <input type="text" name="companyname"/>
+            </label><br/>
+
+            <label>
+                Cargo na empresa:<br/>
+                <input type="text" name="companyjobtitle"/>
+            </label><br/>
+        </fieldset>
+
+        <input type="submit" value="Cadastrar"/>
+
+    </form>
+</body>
+</html>

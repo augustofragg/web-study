@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de teste</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 10px;
+            font-size: 17px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        input[type=text],textarea,select {
+            padding: 10px;
+            width: 500px;
+            font-size:15px;
+            border: 1px solid #CCC;
+            outline: 0;
+            margin-top: 5px;
+        }
+
+        textarea {
+            height: 200px;
+            resize: none;
+        }
+
+        .termoslink {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .termoslink:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid #CCC;
+            background-color: #EEE;
+        }
+
+        button:hover {
+            background-color: #DDD;
+        }
+    </style>
+</head>
+<body>
+    <h1>Css - Formulario</h1>
+
+    <form action="paginas/login.html" method="get">
+
+      <label>
+        Nome Completo<br/>
+        <input type="text" name="nome"/>
+      </label> 
+      
+      <label>
+        Descricao:<br/>
+        <textarea name="descriacao"></textarea>
+      </label>
+
+      <label>
+        Categoria:<br/>
+        <select name="categoria">
+            <option value="1">Categoria 1</option>
+            <option value="2">Categoria 2</option>
+            <option value="3">Categoria 3</option>
+            <option value="4">Categoria 4</option>
+            <option value="5">Categoria 5</option>
+        </select>
+      </label>
+
+      <label>
+        <input type="checkbox"/>
+        Eu declaro que li e aceito os <a class="termoslink" href="paginas/termos.html" target="_blank">termos de uso</a>
+      </label>
+
+      <button>Fazer Cadastro</button>
+
+    </form>
+</body>
+</html>

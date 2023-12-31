@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de teste</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        fieldset {
+            background-color: #EEE;
+            border: 2px solid #FF0000;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 40vw;
+        }
+
+        legend {
+            background-color: #FF0000;
+            color: #FFF;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="paginas/login.html" method="POST">
+
+            <fieldset>
+                <legend>Dados Pessoias</legend>
+                <label>
+                    Nome:<br/>
+                    <input type="text" name="name" required minlength="2" maxlength="4"/>
+                </label><br/>
+                
+                <label>
+                    Sobrenome:<br/>
+                    <input type="text" name="lastname" required minlength="3" />
+                </label><br/>
+
+                <label>
+                    Idade tipo 1<br/>
+                    <input type="number" name="age" min="18" max="120" step="2"/>
+                </label><br/>
+
+                <label>
+                    Data de nascimento:<br/>
+                    <input type="date" name="birthdate" max="2023-12-27"/> 
+                </label><br/>
+
+                <label>
+                    Email:<br/>
+                    <input type="text" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="endereço de email"
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <label>
+                    Nome da Empresa:<br/>
+                    <input type="text" name="companyname"/>
+                </label><br/>
+
+                <label>
+                    Cargo na Empresa:<br/>
+                    <input type="text" name="companyjobtitle"/>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="cadastrar"
+
+    </form>
+</body>
+</html>
